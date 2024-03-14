@@ -13,6 +13,7 @@ $h2Font: 3rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
    background-color: $bgColor;
@@ -204,8 +205,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: $hoverColor;
-    border-radius: 100% 0% 66% 34% / 48% 100% 0% 52% ;
-   
+    border-radius: 100% 0% 66% 34% / 48% 100% 0% 52% ;  
 }
 .right-sec .border img{
     width: 550px;  
@@ -213,6 +213,48 @@ body{
     transform: translateX(1%) translateY(2%) rotate(1deg);
     z-index: -10;
     border-radius: 90px;
+}
+
+// Start About Section
+
+.about{
+    background-color: $secondBgColor;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.left-sec-about img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    padding: 60px;
+}
+.right-sec-about{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   color: white;
+}
+.right-sec-about h2{
+    color: $hoverColor;
+}
+#read-more{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $hoverColor;
+    border: none;
+    outline: none;
+    filter: drop-shadow($neonBoxShadow);
+    transition: .5s;
+}
+#read-more a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#read-more:hover{
+    background-color: #09b9c0;
 }
 @media screen and (max-width: 600px){
     .loader{
@@ -263,6 +305,22 @@ body{
     }
     .social-txt p{
         font-size: 12px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    .about img{
+        width: 400px;
+        height: 400px;
+    }
+    .right-sec-about{
+        text-align: center;
+        padding: 10px;
+        align-items: center;
     }
 }
 
