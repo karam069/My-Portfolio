@@ -35,7 +35,7 @@ $(document).ready(function () {
     let Jobname = "Front-End Developer";
 
     let index = 0;
-  
+
     function TypeWriter() { 
      
      index++;

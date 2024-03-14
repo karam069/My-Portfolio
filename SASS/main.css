@@ -228,10 +228,12 @@ body {
 }
 
 .left-sec-about img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  padding: 60px;
+  margin-top: 20px;
+  border: 5px solid #12f7ff;
+  filter: drop-shadow(0 0 0.5rem #12f7ff);
 }
 
 .right-sec-about {
@@ -244,6 +246,7 @@ body {
 
 .right-sec-about h2 {
   color: #12f7ff;
+  letter-spacing: 1.1px;
 }
 
 #read-more {
@@ -264,6 +267,89 @@ body {
 
 #read-more:hover {
   background-color: #09b9c0;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.services h2 {
+  color: #12f7ff;
+  letter-spacing: 1.1px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 100px;
+}
+
+.coding {
+  margin-right: 20px;
+}
+
+.coding, .translator, .resume-writer {
+  background-color: #292e33;
+  height: 420px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.coding i, .translator i, .resume-writer i {
+  background-color: #1a0618;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #12f7ff;
+  font-size: 30px;
+  padding-top: 19px;
+  filter: drop-shadow(0 0 0.5rem #12f7ff);
+}
+
+.coding #job-title, .translator #job-title, .resume-writer #job-title {
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.coding #job-title, .translator p, .resume-writer p {
+  text-align: center;
+  margin: 20px;
+}
+
+.coding button, .translator button, .resume-writer button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #12f7ff;
+  border: none;
+  outline: none;
+  filter: drop-shadow(0 0 0.2rem #12f7ff);
+}
+
+.coding button {
+  margin-top: 50px;
+}
+
+.translator button {
+  margin-top: 80px;
+}
+
+.resume-writer button {
+  margin-top: 30px;
+}
+
+.coding button a, .translator button a, .resume-writer button a {
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -318,14 +404,24 @@ body {
     align-items: center;
     overflow-x: hidden;
   }
-  .about img {
-    width: 400px;
-    height: 400px;
+  .left-sec-about img {
+    width: 350px;
+    height: 350px;
   }
   .right-sec-about {
     text-align: center;
     padding: 10px;
     align-items: center;
+  }
+  .experience {
+    flex-direction: column;
+  }
+  .coding {
+    margin-right: 0;
+  }
+  .coding, .translator, .resume-writer {
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
 }
 @keyframes front-end {
