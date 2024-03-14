@@ -18,7 +18,7 @@ $h2Font: 3rem;
 body{
    background-color: $bgColor;
    font-family: 'Poppins', sans-serif;
-//    overflow: hidden;
+   overflow-x: hidden;
 }
 .loader{
     width: 100%;
@@ -37,18 +37,6 @@ body{
 .loader h1{
     padding-right: 30px;
     border-right: 2px solid orange;    
-}
-
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: $secondBgColor;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: $hoverColor;
-    border-radius: 10px;
 }
 
 // NavBar
@@ -115,6 +103,7 @@ body{
     align-items: center;
     height: 100vh;
     padding: 80px;
+    width: 100%;
 }
 #front-end{
   color: $hoverColor; 
