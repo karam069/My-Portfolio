@@ -12,25 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-.loader {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  position: fixed;
-  z-index: 10;
-  margin: auto;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-}
-
-.loader h1 {
-  padding-right: 30px;
-  border-right: 2px solid orange;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -336,20 +317,82 @@ body {
 }
 
 .coding button {
-  margin-top: 50px;
+  margin-top: 39px;
 }
 
 .translator button {
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
 .resume-writer button {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .coding button a, .translator button a, .resume-writer button a {
   color: black;
   text-decoration: none;
+  font-size: 17px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.coding button:hover, .translator button:hover, .resume-writer button:hover {
+  background-color: transparent;
+  border: 4px solid #12f7ff;
+  filter: drop-shadow(0 0 2rem #12f7ff);
+}
+
+.coding button:hover a, .translator button:hover a, .resume-writer button:hover a {
+  color: #12f7ff;
+}
+
+.skills {
+  background-color: #292e33;
+  width: 100%;
+}
+
+.skills-head {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skills-head p {
+  color: #c1c4c7;
+}
+
+.skills-head h2 {
+  color: #12f7ff;
+  letter-spacing: 1.1px;
+}
+
+.skills-body-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.skill img {
+  width: 200px;
+  margin: auto;
+}
+
+.skill {
+  width: 330px;
+  height: 370px;
+  background-color: #1a0618;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(0 0 0.5rem #12f7ff);
+}
+
+.skill p {
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 600px) {
@@ -422,7 +465,27 @@ body {
   }
   .coding, .translator, .resume-writer {
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .services h2 {
+    color: #12f7ff;
+    letter-spacing: 1.1px;
+  }
+  .skills-body-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill {
+    margin-top: 32px;
   }
 }
 @keyframes front-end {
