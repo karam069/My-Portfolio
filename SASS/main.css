@@ -608,6 +608,9 @@ body {
   .skill {
     margin-top: 32px;
   }
+  .portfolio {
+    overflow-x: hidden;
+ }
   .projects {
     flex-direction: column;
   }
