@@ -5,7 +5,6 @@ $(document).ready(function () {
  });
 
  $(document).ready(function(){
-    // $("#front-end")
 
     let Jobname = "Front-End Developer";
 
@@ -24,4 +23,22 @@ $(document).ready(function () {
      setInterval(function () {  
          TypeWriter();
      }, 200);
- })
+ });
+
+ $(document).ready(function(){
+
+     const hidden = document.querySelectorAll(".hidden");
+
+     const observer = new IntersectionObserver((entries) => {
+         entries.forEach((entry) => {
+            console.log(entry)
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            } else{
+                entry.target.classList.remove("show")
+            }
+         })
+     });
+
+     hidden.forEach((el) => observer.observe(el));
+ });

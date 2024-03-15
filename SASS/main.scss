@@ -67,7 +67,9 @@ body{
     width: 30px;
     height: 21px;
 }
-
+.active-nav{
+    color: $hoverColor !important;
+}
 .toggle-button .bar{
     height:3px;
     width: 100%;
@@ -467,4 +469,13 @@ body{
 @keyframes front-end {
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 3s;
+} 
+
+.show{
+    opacity: 1;
 }
