@@ -353,6 +353,7 @@ body {
 .skills {
   background-color: #292e33;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .skills-head {
@@ -393,10 +394,76 @@ body {
   filter: drop-shadow(0 0 0.5rem #12f7ff);
 }
 
+.skill:hover {
+  transform: scale(1.02);
+}
+
 .skill p {
   color: white;
   text-align: center;
   font-size: 25px;
+  padding-top: 30px;
+}
+
+.portfolio {
+  background-color: #1a0618;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.upper-sec-portfolio h2 {
+  color: #12f7ff;
+  letter-spacing: 1.1px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .project img {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.5rem #12f7ff);
+  cursor: pointer;
+}
+
+.projects .project img:hover {
+  transform: scale(1.05);
+}
+
+.project button span a {
+  color: #1a0618;
+  text-decoration: underline;
+}
+
+.live {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-family: "Poppins";
+  filter: drop-shadow(0 0 0.3rem #12f7ff);
+}
+
+.liveImg {
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -490,6 +557,12 @@ body {
   }
   .skill {
     margin-top: 32px;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .project {
+    margin-top: 20px;
   }
 }
 @keyframes front-end {
