@@ -466,6 +466,56 @@ body {
   margin-top: 5px;
 }
 
+.contact {
+  background-color: #292e33;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.upper-sec-contact h2 {
+  color: #12f7ff;
+}
+
+.forms form input, .forms form textarea {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1a0618;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.forms form textarea {
+  height: 100%;
+}
+
+.forms form input::-moz-placeholder, .forms form textarea::-moz-placeholder {
+  font-size: 14px;
+}
+
+.forms form input::placeholder, .forms form textarea::placeholder {
+  font-size: 14px;
+}
+
+.btn-sub {
+  width: 300px;
+  height: 40px;
+  margin: 20px 0;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #12f7ff;
+  font-size: 18px;
+  filter: drop-shadow(0 0 0.5rem #12f7ff);
+}
+
 @media screen and (max-width: 600px) {
   .loader {
     font-size: 30px;
@@ -569,6 +619,9 @@ body {
   }
   .projectImg {
     width: 370px;
+  }
+  .forms form input, .forms form textarea {
+    width: 80%;
   }
 }
 @keyframes front-end {

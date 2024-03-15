@@ -424,6 +424,46 @@ body{
     height: 50px !important;
     margin-top: 5px;
 }
+.contact{
+    background-color: $secondBgColor;
+    text-align: center;
+    color: white;
+    padding: 30px ;
+}
+.upper-sec-contact h2{
+    color: $hoverColor;
+}
+.forms form input, .forms form textarea{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: $bgColor;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.forms form textarea{
+    height: 100%;
+}
+.forms form input::placeholder, .forms form textarea::placeholder{
+   font-size: 14px;
+}
+.btn-sub{
+    width: 300px;
+    height: 40px;
+    margin: 20px 0;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: $hoverColor;
+    font-size: 18px;
+    filter: drop-shadow($neonBoxShadow);
+}
 @media screen and (max-width: 600px){
     .loader{
         font-size: 30px;
@@ -533,6 +573,9 @@ body{
     }
     .projectImg{
         width: 370px;
+    }
+    .forms form input, .forms form textarea{
+        width: 80%;
     }
 }
 
