@@ -429,7 +429,7 @@ body {
   flex-direction: column;
 }
 
-.projects .project img {
+.projectImg {
   width: 400px;
   height: 250px;
   border-radius: 5px;
@@ -563,6 +563,9 @@ body {
   }
   .project {
     margin-top: 20px;
+  }
+  .live {
+    filter: drop-shadow(0 0 0);
   }
 }
 @keyframes front-end {
