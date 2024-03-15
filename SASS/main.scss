@@ -20,25 +20,6 @@ body{
    font-family: 'Poppins', sans-serif;
    overflow-x: hidden;
 }
-.loader{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    position: fixed;
-    z-index: 10;
-    margin: auto;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-}
-
-.loader h1{
-    padding-right: 30px;
-    border-right: 2px solid orange;    
-}
-
 // NavBar
 
 .navbar{
@@ -397,7 +378,21 @@ body{
     }
     .coding, .translator, .resume-writer{
         margin-bottom: 10px;
-        margin-left: 10px;
+        margin-left: 0px;
+        ;
+    }
+    .services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .services h2{
+        color: $hoverColor;
+        letter-spacing: 1.1px;
     }
 }
 
