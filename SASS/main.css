@@ -466,11 +466,15 @@ body {
   margin-top: 5px;
 }
 
+.hover:hover {
+  color: #015153;
+}
+
 .contact {
   background-color: #292e33;
   text-align: center;
   color: white;
-  padding: 30px 0;
+  padding: 30px;
 }
 
 .upper-sec-contact h2 {
@@ -608,9 +612,6 @@ body {
   .skill {
     margin-top: 32px;
   }
-  .portfolio {
-    overflow-x: hidden;
- }
   .projects {
     flex-direction: column;
   }
