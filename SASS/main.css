@@ -620,6 +620,10 @@ body {
   .forms form input, .forms form textarea {
     width: 80%;
   }
+  .live {
+     width: 300px;
+     margin: 35px auto 20px auto;
+  }
 }
 @keyframes front-end {
   from {
