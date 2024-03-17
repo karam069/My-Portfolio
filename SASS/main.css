@@ -4,12 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 body {
   background-color: #1a0618;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 .navbar {
