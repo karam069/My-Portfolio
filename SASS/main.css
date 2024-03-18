@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-   overflow-x: hidden;
 }
 
 body {
@@ -195,6 +194,7 @@ body {
   height: 100%;
   background-color: #12f7ff;
   border-radius: 100% 0% 66% 34%/48% 100% 0% 52%;
+  overflow: hidden;
 }
 
 .right-sec .border img {
@@ -514,9 +514,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .loader {
-    font-size: 30px;
-  }
   .toggle-button {
     display: flex;
   }
