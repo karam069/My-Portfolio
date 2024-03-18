@@ -10,7 +10,28 @@ body {
   background-color: #1a0618;
   font-family: "Poppins", sans-serif;
 }
-
+.toTop{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #12f7ff;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  z-index: 100;
+  transition: .5s;
+  display: none;
+  font-size: 25px;
+  text-align: center;
+}
+.toTop:hover{
+  animation: to-top 1s infinite alternate linear;
+  background-color: #011c1d;
+  color: white;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -487,6 +508,7 @@ body {
   padding: 10px;
   margin-top: 20px;
   font-size: 18px;
+  resize: none;
 }
 
 .forms form textarea {
@@ -514,6 +536,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  *{
+    overflow-x: hidden;
+  }
   .toggle-button {
     display: flex;
   }
@@ -608,9 +633,6 @@ body {
   .project {
     margin-top: 20px;
   }
-  .live {
-    filter: drop-shadow(0 0 0);
-  }
   .projectImg {
     width: 350px;
   }
@@ -620,6 +642,8 @@ body {
   .live {
      width: 300px;
      margin: 35px auto 20px auto;
+     filter: drop-shadow(0 0 0);
+     overflow: hidden;
   }
 }
 @keyframes front-end {
@@ -629,6 +653,15 @@ body {
   to {
     opacity: 1;
   }
+}
+
+@keyframes to-top {
+   from{
+    transform: translateY(0);
+   }
+   to{
+    transform: translateY(-10px);
+   }
 }
 .hidden {
   opacity: 0;

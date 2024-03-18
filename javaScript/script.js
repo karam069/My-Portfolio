@@ -23,6 +23,21 @@ $(document).ready(function () {
      setInterval(function () {  
          TypeWriter();
      }, 200);
+
+    window.onscroll = function () { 
+        if(window.scrollY >= 600){
+            $(".toTop").css("display", "block")
+         } else{
+            $(".toTop").css("display", "none")
+         }
+     }
+
+     $(".toTop").click(function () { 
+          scroll({
+            top:0,
+          })
+      });
+
  });
 
  $(document).ready(function(){
@@ -42,18 +57,3 @@ $(document).ready(function () {
 
      hidden.forEach((el) => observer.observe(el));
  });
-//  while(10 < 10){
-//     console.log("hello world");
-//  }
-//  wheile = 10;
-
-//  if(wheile < 10){
-//     console.log("hello bye");
-//  } else{
-//     console.log("but");
-//  }
-
-//  var s = 10;
-// for(let i = 0; i < s; i++){
-//     console.log(s[i])
-// }
