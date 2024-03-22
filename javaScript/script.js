@@ -24,13 +24,14 @@ $(document).ready(function () {
          TypeWriter();
      }, 200);
 
-    window.onscroll = function () { 
+    $(window).scroll(function () {
         if(window.scrollY >= 600){
             $(".toTop").css("display", "block")
          } else{
             $(".toTop").css("display", "none")
          }
-     }
+      })
+     
 
      $(".toTop").click(function () { 
           scroll({
