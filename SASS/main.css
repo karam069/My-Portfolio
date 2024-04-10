@@ -242,8 +242,8 @@ body {
 }
 
 .left-sec-about img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   margin-top: 20px;
   border: 5px solid #12f7ff;
@@ -537,10 +537,18 @@ body {
   margin: 20px 0;
   border-radius: 3px;
   border: none;
+  color: white;
   outline: none;
-  background-color: #12f7ff;
+  background-color: #292e33;
   font-size: 18px;
-  filter: drop-shadow(0 0 0.5rem #12f7ff);
+  filter: drop-shadow(0 0 0.3rem white);
+  cursor: pointer;
+  transition: .5s;
+}
+.btn-sub:hover{
+  color: black;
+  background-color: #12f7ff;
+  filter: drop-shadow(0 0 0.3rem #12f7ff);
 }
 
 @media screen and (max-width: 600px) {
@@ -642,10 +650,10 @@ body {
     margin-top: 20px;
   }
   .projectImg {
-    width: 350px;
+    width: 320px;
   }
   .forms form input, .forms form textarea {
-    width: 80%;
+    width: 100%;
   }
   .live {
      width: 300px;
