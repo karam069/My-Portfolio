@@ -418,7 +418,6 @@ body {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   /* // filter: drop-shadow($neonBoxShadow); */
 }
 .skill:hover{
   transform: scale(1.02);
@@ -553,7 +552,9 @@ body {
   filter: drop-shadow(0 0 0.3rem #12f7ff);
 }
 
-@media screen and (max-width: 600px) {
+/* Start Phone */
+
+@media (min-width: 200px) and (max-width: 1080px) {
   *{
     overflow-x: hidden;
   }
@@ -664,6 +665,46 @@ body {
      overflow: hidden;
   }
 }
+
+/* Start Tablets */
+
+@media (min-width: 800px) and (max-width: 1080px){
+  *{
+    overflow-x: scroll;
+  }
+
+  .hero{
+    height: 50vh;
+    justify-content: center;
+  }
+  
+  .services h2{
+    margin-bottom: 40px;
+  }
+
+  .experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+  }
+  .projectImg {
+    width: 620px;
+    height: 350px;
+  }
+  .live{
+    width: 620px;
+  }
+
+  .btn-sub {
+    width: 450px;
+  }
+}
+
+/* Start Animations */
+
 @keyframes front-end {
   from {
     opacity: 0;
